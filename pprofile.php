@@ -19,10 +19,6 @@
     <title>BIKO - Perfil</title>
     <link rel="icon" type="image/png" href="img/icon.png">
     <link href="<?php echo $static ?>style/pprofile.scss" rel="stylesheet" />
-    <link rel="stylesheet" href="style/sweetalert2.css" />
-    <script type="text/javascript" src="js/search.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/sweetalert2.js"></script>
 
 </head>
 <body>

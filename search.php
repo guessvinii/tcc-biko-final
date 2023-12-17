@@ -6,11 +6,6 @@
     <title>BIKO - Pesquisar...</title>
     <link rel="icon" type="image/png" href="img/icon.png">
     <link href="style/search.scss" rel="stylesheet" />
-    <link rel="stylesheet" href="style/sweetalert2.css" />
-    <script type="text/javascript" src="js/search.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/sweetalert2.js"></script>
-
     <?php
         set_include_path('D:\XAMPP\htdocs\BIKO\php');
         include ('conexao.php');
