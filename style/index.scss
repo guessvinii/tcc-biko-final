@@ -1,0 +1,261 @@
+@import "global.scss";
+
+/* Título Página Inicial */
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 1rem;
+}
+
+.titulo-principal{
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+
+/* Elipse Topo */
+.circles-topo{
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+
+.circle1 {
+    fill: #c9bbf7;
+    border-radius: 25% 0% 51% 49% / 50% 46% 54% 50%;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.circle2 {
+    fill: #c3bdf8;
+    width: 200px;
+    height: 200px;
+    border-radius: 25% 0% 51% 49% / 50% 46% 54% 50%;
+    position: relative;
+    border-width: 0px;
+    display: block;
+}
+
+/* Barra de Navegação */
+.menu-sandwich{
+    display: block;
+    width: 45px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 4.5%;
+    left: 32px;
+    cursor: pointer;
+}
+
+.menu-sandwich > .bar, .menu-sandwich:after, .menu-sandwich:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.menu-sandwich.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.menu-sandwich.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.menu-sandwich.is-active > .bar{
+    opacity: 0;
+}
+
+.mobile-navbar{
+    display: block;
+    position: fixed;
+    width: 6rem;
+    height: 2px;
+    /* height: 35%; */
+    top: 8.5%;
+    left: -200px;
+    border-radius: 25px;
+    background-color: #c9bbf7;
+    z-index: 1;
+    transition: 1s;
+    transition: height 1.2s ease-in-out 0.2s;
+    overflow: hidden;
+    /* var(--bg-primary); */
+}
+
+.mobile-navbar.is-active{
+    top: 8.5%;
+    height: 23%;
+    left: 3%;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-link{
+    display: block;
+    text-align: center;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 1.5rem;
+}
+
+.nav-link:hover{
+    background-color: #b8a8ee;
+    /* border-radius: 50px; */
+}
+
+.link-text{
+    display: block;
+    /* margin-left: 1rem; */
+}
+
+.nav-link img{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+
+/* Carrossel */
+.content-carrossel{
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrossel-destaques{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.0rem;
+    overflow-y:visible;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-left: 20px;
+    scroll-padding-right: 20px;
+    scroll-snap-align: center;
+    scrollbar-width: none;
+    transition-timing-function: linear;
+    min-width: 100%;
+}
+
+.carrossel-destaques::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    border-radius: 30px;
+    min-height: 160px;
+    min-width: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.card > h3{
+    color: white;
+}
+
+.card:nth-child(odd) {
+    background: linear-gradient(-229deg, #fbd52d, #ef3a7b);
+}
+
+.card:nth-child(even) {
+    background: linear-gradient(-229deg, #ff70af, #5fa8f5);
+}
+
+#img1-carrossel{
+    background: url("https://s3-alpha-sig.figma.com/img/b4f0/23ef/a4b3131074295b1f5f162aae7cff9450?Expires=1702857600&Signature=UNuRJ8XX4OITeeegt8~7bST02YG0tHzwShA7i49yMA2HXw96CSrianBNJp9zz1kVGRmUSp3tIhwD3CrZ5gE58dt6~xM18A-lKUs-HJvXK7cN2GWhV3c8fcIj2AcK-GPuhAdjcMThepbsvgz-V2TuX7Sxmv8J1GFN7lErfzv82y8tJDEbU9230UmvJKLueWLR2UE7rtAYNQrB4aI~a25z6lv5vp2rZyH93bZothNCHEXMVoCazxtMjBtBisHBEt2mEirZP8jKhPHg1hPlKb71ZrofrKgsYqAoCmyq9KkLZpXLnpLzkejJgFQG6nmAo7H856TmaoWmNGSgFDsEpp~rGA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+    object-fit: contain;
+}
+
+#img2-carrossel{
+    background: url("https://i.makeagif.com/media/7-23-2016/UddqkM.gif");
+    object-fit: contain;
+}
+
+#img3-carrossel{
+    background: url("https://media1.giphy.com/media/Vg5lA7oBMvNM7oNF5u/giphy.gif");
+    object-fit: contain;
+}
+
+#img4-carrossel{
+    background: url("https://media.tenor.com/KICzWUZ0HJwAAAAC/maquiagem-ahazou.gif");
+    object-fit: contain;
+
+}
+
+#img5-carrossel{
+    background: url("https://media.giphy.com/media/3oEjHUGovEFRfxoQkE/giphy.gif");
+    object-fit: contain;
+}
+
+
+/* Serviços */
+.container-cards{
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.5rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding-left: 20px;
+    scroll-padding-right: 20px;
+    scroll-snap-align: center;
+    scrollbar-width: none;
+    transition-timing-function: linear;
+    /* margin-left: 10px; */
+}
+
+.cards-servico{
+    display: block;
+    width: fit-content;
+}
+
+.titulo_servico{
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+}
+
+/* Prestadores */
+.cards-profissional{
+    display: block;
+    width: fit-content;
+}
+
+.titulo_profissional{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.novoBIKO{
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+}

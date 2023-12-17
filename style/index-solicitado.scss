@@ -1,0 +1,19 @@
+@import "global.scss";
+@import "index.scss";
+
+.biko-Andamento{
+    position: fixed;
+    top: 45px;
+    left: 35%
+}
+
+.txt-bikoSolicitado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size: 18px;
+}

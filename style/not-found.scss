@@ -1,0 +1,57 @@
+@import "global.scss";
+
+.lost-404{
+    width: 220px;
+    height: 220px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+h1{
+    font-size: 72px;
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+}
+
+h2{
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.foto{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+img{
+    display: flex;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.circle1 {
+    fill: #c9bbf7;
+    border-radius: 25% 0% 51% 49% / 50% 46% 54% 50%;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.circle2 {
+    fill: #c3bdf8;
+    width: 200px;
+    height: 200px;
+    border-radius: 25% 0% 51% 49% / 50% 46% 54% 50%;
+    position: relative;
+    border-width: 0px;
+    display: block;
+}
